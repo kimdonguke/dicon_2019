@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Make_borrowItem"
+
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="제목을 입력하세요"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/MakeBorrowItem_headline"
+        android:id="@+id/justtxt2"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#111"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="내용을 입력하세요"
+        android:id="@+id/justtxt3"
+        app:layout_constraintTop_toBottomOf="@+id/MakeBorrowItem_headline"
+        app:layout_constraintLeft_toLeftOf="@+id/justtxt2"
+        android:layout_marginTop="10dp"
+        android:textColor="#111"
+        />
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/justtxt2"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/MakeBorrowItem_headline"
+        />
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/justtxt3"
+        app:layout_constraintLeft_toLeftOf="@+id/MakeBorrowItem_headline"
+        android:id="@+id/MakeBorrowItem_body"
+        android:hint="글 쓰기...."
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/MakeBorrowItem_submit"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        android:text="submit"
+        />
+</android.support.constraint.ConstraintLayout>
