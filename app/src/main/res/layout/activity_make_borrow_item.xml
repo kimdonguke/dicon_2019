@@ -36,6 +36,7 @@
         app:layout_constraintTop_toBottomOf="@+id/justtxt2"
         android:layout_marginLeft="30dp"
         android:id="@+id/MakeBorrowItem_headline"
+        android:maxLength="8"
         />
     <EditText
         android:layout_width="320dp"

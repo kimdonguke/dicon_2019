@@ -1,7 +1,6 @@
 package com.example.dicon_2019;
 
 import android.content.Context;
-import android.media.Image;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -28,11 +27,11 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         }
     }
     // 생성자에서 데이터 리스트 객체를 전달받음.
-    RecyclerViewAdapter(ArrayList<String> list1, ArrayList<String> list2, ArrayList<String> list3) { // ArrayList<Image> list4 만들기
+    RecyclerViewAdapter(ArrayList<String> list1, ArrayList<String> list2, ArrayList<String> list3,ArrayList<ImageView> list4) { // ArrayList<Image> list4 만들기
         mData = list1;
         iData = list2;
         jData = list3;
-        //imageData=list4;
+        imageData=list4;
     }
 
     // onCreateViewHolder() - 아이템 뷰를 위한 뷰홀더 객체 생성하여 리턴.
@@ -57,6 +56,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         holder.sellername.setText(text) ;
         holder.thatdate.setText(text2);
         holder.maintext.setText(text3 );
+        //holder.profile.setImageResource(profile);
+        //drawable 에서 가져오기 여기로
     }
 
     // getItemCount() - 전체 데이터 갯수 리턴.

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.dicon_2019">
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
 
     <application
         android:allowBackup="true"
@@ -12,7 +14,6 @@
         <activity android:name=".Make_borrowItem"></activity>
         <activity android:name=".ItemBorrowMakeActivity"></activity>
         <activity android:name=".MakeAccount" />
-        <activity android:name=".StartActivity" />
         <activity android:name=".Make_fragActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

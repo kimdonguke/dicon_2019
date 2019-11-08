@@ -22,7 +22,7 @@
         android:id="@+id/linearlayout"
         android:paddingVertical="20dp"
         >
-        <TextView
+        <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
             app:layout_constraintLeft_toLeftOf="parent"

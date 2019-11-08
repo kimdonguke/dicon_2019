@@ -3,18 +3,16 @@ package com.example.dicon_2019;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.constraint.ConstraintLayout;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.ImageView;
 
 import java.util.ArrayList;
 
@@ -35,8 +33,9 @@ public class BorrowserviceFragment extends Fragment {
         ArrayList<String> list=new ArrayList<>();
         ArrayList<String> list2=new ArrayList<>();
         ArrayList<String> list3=new ArrayList<>();
+        ArrayList<ImageView> list4=new ArrayList<>();
 
-        recyclerViewAdapter=new RecyclerViewAdapter(list,list2,list3);
+        recyclerViewAdapter=new RecyclerViewAdapter(list,list2,list3, list4);
         ConstraintLayout constraintLayout=v.findViewById(R.id.make_frag);
         constraintLayout.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -6,7 +6,7 @@
 //
 //
 //public class NetRetrofit {
-//    final static String url="http://198.13.39.251";
+//    final static String url="http:3.15.34.178:3000";
 //    final static int port=3000;
 //
 //    private static Retrofit retrofit;

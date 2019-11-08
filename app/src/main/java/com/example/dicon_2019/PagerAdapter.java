@@ -9,12 +9,13 @@ import java.util.ArrayList;
 
 public class PagerAdapter extends FragmentPagerAdapter {
         ArrayList<Fragment> list;
-        String[] title=new String[]{"Borrow"};
+        String[] title=new String[]{"Borrow","Alert","connect","setting"};
 
         public PagerAdapter(FragmentManager fm) {
             super(fm);
             list = new ArrayList<>();
             list.add(new BorrowserviceFragment());
+            list.add(new StartActivity());
         }
         @Override
         public Fragment getItem(int i) {
