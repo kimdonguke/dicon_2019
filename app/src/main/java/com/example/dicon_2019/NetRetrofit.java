@@ -6,7 +6,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 
 public class NetRetrofit {
-    final static String url="http:3.15.34.178:3000";
+    final static String url="http://34.97.175.13";
     final static int port=3000;
 
     private static Retrofit retrofit;
