@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 intent=new Intent(MainActivity.this,Make_fragActivity.class);
+
                 startActivity(intent);
             }
         });
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 intent=new Intent(MainActivity.this,MakeAccount.class);
+
                 startActivity(intent);
             }
         });

@@ -14,8 +14,10 @@ public class PagerAdapter extends FragmentPagerAdapter {
         public PagerAdapter(FragmentManager fm) {
             super(fm);
             list = new ArrayList<>();
+
             list.add(new BorrowserviceFragment());
-            list.add(new StartActivity());
+           // list.add(new StartActivity());
+            list.add(new Fragment_Bluetooth());
         }
         @Override
         public Fragment getItem(int i) {

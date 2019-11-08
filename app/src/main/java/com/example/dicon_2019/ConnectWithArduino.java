@@ -17,6 +17,7 @@ public class ConnectWithArduino extends AppCompatActivity {
 
     private BluetoothSPP bt;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

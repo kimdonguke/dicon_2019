@@ -1,7 +1,8 @@
 package com.example.dicon_2019;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -11,6 +12,7 @@ public class MakeAccount extends AppCompatActivity {
     EditText email,password,repassword,grade,classes,number,name;
     String email2,password2,repassword2,grade2,classes2,number2,name2;
     Button button;
+    String check;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +24,7 @@ public class MakeAccount extends AppCompatActivity {
         classes=findViewById(R.id.MakeAccount_Class_txt);
         number=findViewById(R.id.MakeAccount_Number_txt);
         name=findViewById(R.id.MakeAccount_Name_txt);
-        button=findViewById(R.id.MakeAccount_btn);
+        button=findViewById(R.id.MakeAccount_signupBtn);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -33,11 +35,29 @@ public class MakeAccount extends AppCompatActivity {
                 classes2=classes.getText().toString();
                 number2=number.getText().toString();
                 name2=name.getText().toString();
-                if(password2!=repassword2){
+                if(password2.equals(repassword2)){
+//                    if(password2.equals(repassword2)){
+//                        check="it is true";
+//                    }
+//                    else{
+//                        check="it is false";
+//                    }
                     Toast.makeText(MakeAccount.this, "비밀번호를 다시 입력해주세요", Toast.LENGTH_SHORT).show();
+
+                    Intent intent=new Intent(MakeAccount.this,MainActivity.class);
+                    startActivity(intent);
                 }
                 else{
                     //서버에 전송 위에 값 전부
+
+                    if(password2.equals(repassword2)){
+                        check="it is true";
+                    }
+                    else{
+                        check="it is false";
+                    }
+                    Toast.makeText(MakeAccount.this, "비밀번호를 다시 입력해주세요", Toast.LENGTH_SHORT).show();
+
                 }
             }
         });

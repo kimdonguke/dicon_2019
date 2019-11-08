@@ -15,6 +15,7 @@
         <activity android:name=".ItemBorrowMakeActivity"></activity>
         <activity android:name=".MakeAccount" />
         <activity android:name=".Make_fragActivity" />
+        <activity android:name=".ConnectWithArduino"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

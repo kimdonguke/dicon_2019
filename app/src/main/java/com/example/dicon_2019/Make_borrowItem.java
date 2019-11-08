@@ -10,7 +10,7 @@ import android.widget.EditText;
 public class Make_borrowItem extends AppCompatActivity {
     EditText headline,body;
     String headlineStr,bodyStr;
-    Intent intent=new Intent(Make_borrowItem.this,Make_fragActivity.class);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +23,7 @@ public class Make_borrowItem extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent=new Intent(Make_borrowItem.this,Make_fragActivity.class);
                 headlineStr=headline.getText().toString();
                 bodyStr=body.getText().toString();
                 startActivity(intent);
