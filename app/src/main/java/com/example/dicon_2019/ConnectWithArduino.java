@@ -16,7 +16,7 @@ import app.akexorcist.bluetotohspp.library.DeviceList;
 public class ConnectWithArduino extends AppCompatActivity {
 
     private BluetoothSPP bt;
-
+    private String hakbun="10607";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,7 +91,7 @@ public class ConnectWithArduino extends AppCompatActivity {
         Button btnSend = findViewById(R.id.btnSend); //데이터 전송
         btnSend.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                bt.send("Text", true);
+                bt.send(hakbun, true);
             }
         });
     }
