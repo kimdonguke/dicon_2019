@@ -29,7 +29,7 @@
             app:layout_constraintTop_toTopOf="parent"
             android:id="@+id/onItem_profile_image"
             android:layout_marginLeft="30dp"
-
+            android:src="@drawable/profile_image"
             />
         <!--위에 textview 이미지뷰로 바꾸기-->
         <TextView
@@ -62,6 +62,7 @@
             app:layout_constraintLeft_toLeftOf="@+id/onItem_profile_image"
             app:layout_constraintTop_toBottomOf="@+id/onItem_profile_image"
             android:id="@+id/borrowservice_item_maintext"
+            android:text="안드로이드를 배우기 위한 가장 좋은 책, 두잇 아느도리드 프로그램을 소개합니다. 2개월에 걸쳐 안드로이드를 정복하실수 있습니다."
             />
         <Button
             android:layout_width="wrap_content"

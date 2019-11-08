@@ -11,5 +11,6 @@ import retrofit2.http.POST;
 public interface NetRetrofitServices {
     @POST("/sendData") //종훈이가 짠 서버 ㅎ
     @FormUrlEncoded
-    Call<Data> sendData(@Field("hour") int hour);
+    Call<Data>  (@Field("hour") int hour);
+    Call<Data>
 }

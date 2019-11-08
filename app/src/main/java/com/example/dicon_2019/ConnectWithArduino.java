@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import app.akexorcist.bluetotohspp.library.BluetoothSPP;
@@ -17,13 +18,14 @@ public class ConnectWithArduino extends AppCompatActivity {
 
     private BluetoothSPP bt;
     private String hakbun="10607";
+    private EditText hak_edit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.connectwitharduino);
         bt = new BluetoothSPP(this); //Initializing
-
+        hak_edit=findViewById(R.id.connect_hakbun);
         if (!bt.isBluetoothAvailable()) { //블루투스 사용 불가
             Toast.makeText(getApplicationContext()
                     , "Bluetooth is not available"
@@ -91,6 +93,7 @@ public class ConnectWithArduino extends AppCompatActivity {
         Button btnSend = findViewById(R.id.btnSend); //데이터 전송
         btnSend.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                hakbun=hak_edit.getText().toString();
                 bt.send(hakbun, true);
             }
         });

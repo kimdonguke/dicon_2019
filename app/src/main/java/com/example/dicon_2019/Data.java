@@ -6,6 +6,7 @@ public class Data {
         private String headline;
 
         public String getMainText() {
+
             return mainText;
         }
         public String getHeadline(){

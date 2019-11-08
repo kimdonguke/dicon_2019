@@ -6,11 +6,30 @@
     android:layout_height="match_parent"
     >
 
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="write your school num when you send to arduino"
+        android:textColor="#111"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/connect_hakbun"
+        app:layout_constraintLeft_toLeftOf="@id/connect_hakbun" />
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/btnConnect"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="20dp"
+        android:hint="(ex 10607)"
+        android:id="@+id/connect_hakbun"
+        />
     <Button
         android:id="@+id/btnConnect"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="블루투스 연결하기"
+        android:paddingHorizontal="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -20,7 +39,7 @@
         android:id="@+id/btnSend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
+        android:paddingHorizontal="83dp"
         android:text="보내기"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

@@ -5,7 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/dicon2019_applogo"
+        app:layout_constraintLeft_toLeftOf="@+id/keyImg"
+        app:layout_constraintRight_toRightOf="@+id/logindId_txt"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/logindId_txt"
+        />
 <ImageView
     android:layout_width="30dp"
     android:layout_height="30dp"
@@ -31,7 +39,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/keyImg"
         android:layout_marginLeft="5dp"
         android:id="@+id/logindId_txt"
-        android:hint="write your id"
+        android:hint="write email"
         android:textSize="20sp"
         />
     <EditText
@@ -42,7 +50,7 @@
         android:layout_marginLeft="5dp"
         android:textSize="20sp"
         android:id="@+id/loginPass_txt"
-        android:hint="write your password"
+        android:hint="write password"
         android:password="true"
         />
 

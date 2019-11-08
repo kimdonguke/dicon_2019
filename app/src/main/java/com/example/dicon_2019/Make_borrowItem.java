@@ -26,6 +26,7 @@ public class Make_borrowItem extends AppCompatActivity {
                 Intent intent=new Intent(Make_borrowItem.this,Make_fragActivity.class);
                 headlineStr=headline.getText().toString();
                 bodyStr=body.getText().toString();
+
                 startActivity(intent);
 
                 //서버와의 통신 // 자기 프로필하고, 제목, 내용
